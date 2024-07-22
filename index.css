@@ -1,0 +1,279 @@
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#122620;
+  padding-left: 2px;
+  padding-right: 5px;
+
+}
+
+/* header{
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+} */
+
+#logo{
+  height: 62px;
+  width: 120px;
+}
+
+/*product button*/
+
+
+.btn1{
+    border: none;
+    font-size:1.2rem;
+    font-family: "Archivo Narrow", sans-serif;
+     padding: 7px;
+     background-color:#122620;
+
+    color: white;
+    border-radius: 5px;
+    
+  }
+
+  #product_list{
+
+    display: none;
+    width: 130px;
+    background-color: #bae0ff;
+    position: absolute;
+    z-index: 1;
+
+  }
+  
+  .product_link{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  .product_link:hover{
+    background-color: rgb(211, 252, 255);
+  }
+
+
+  /**language button*/
+
+
+.langbtn{
+  border: none;
+  font-size:1.1rem;
+  font-family: "Archivo Narrow", sans-serif;
+  background-color:#122620;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  
+}
+
+#language_list{
+  display: none;
+  width: 130px;
+  background-color: #eff8ff;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.langName{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#langbtn_container:hover #language_list{
+ display: block;
+}
+.langName:hover{
+  background-color: #f2f2f2;
+}
+
+/* search */
+
+#searchbox{
+  border: none;
+  width: 25%;
+  background-color: #f2f2f2;
+  display: flex;
+}
+
+#searchbox>input[type="text"]
+{
+  width: 85%;
+  margin: 0;
+  height: 2.5rem;
+  font-size: larger;
+
+  border: none;
+}
+
+#searchbutton{
+  border: none;
+  min-width: 13%;
+  height: 99%;
+  font-weight: 800;
+  padding: 4px;
+}
+
+#sr_icon{
+ margin-top:2px ;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/* order and login */
+#navbar>a{
+  text-decoration: none;
+  font-size:1.1rem;
+  font-family: "Archivo Narrow", sans-serif;
+  background-color:#122620;
+
+  color: white;
+  
+}
+
+/* navbar seecond */
+
+#navbar2{
+  
+  height: 40px;
+  align-content: center;
+  background-color:#122620;
+
+ 
+}
+
+#navbar2_content>a{
+  text-decoration: none;
+  font-size:1.1rem;
+    font-family: "Archivo Narrow", sans-serif;
+    background-color:#122620;
+
+    color: white;
+}
+
+#navbar2_content{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+#bar{
+  display: none; 
+   color: white;
+   font-size: larger; 
+
+}
+
+#barcontent{
+
+  height: 100vh;
+  width: 0;
+  z-index: 1;
+  top: 70px;
+  position: absolute;
+  overflow-x: hidden;
+  font-size: large;
+  background-color: #122620;
+  color: rgb(187, 187, 187);
+  transition: all  .6s ease-in-out ;
+ 
+}
+
+
+
+#barcontent>ul>li{
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all  .6s ease-in-out ;
+
+}
+
+#barcontent>ul>li:hover{
+  color: whitesmoke;
+}
+
+#shutdown{
+  font-size: x-large;
+  padding-right: 15px;
+  text-align: right;
+}
+
+
+
+#products{
+ background-color:white;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+.box{
+  padding: 2px;
+  transition: all 0.7s ease-in-out;
+}
+
+.box:hover{
+   box-shadow: 2px 2px gainsboro;
+}
+
+#products>a{
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: .7rem;
+  font-weight: 550;
+}
+
+a>img{
+  height: 64px;
+  max-width: 90px;
+  object-fit: contain;
+  display: block;
+}
+
+
+
+/* media Query */
+
+@media screen and (max-width:630px) {
+  
+ #langbtn_container, #login,#navbar2_content>a{
+    display: none;
+  }
+  
+ #searchbox
+  {
+      min-width: 35%;
+  }
+
+  #searchbox>input[type="text"]{
+    height: 2rem;
+  }
+
+  #bar{
+    display: block;
+    margin: 15px;
+    width: 200px;
+  }
+
+
+}
+
+@media screen and (max-width:600px) {
+  a>img{
+    max-width: 60px;
+    height: 60px;
+  }
+}

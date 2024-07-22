@@ -1,0 +1,86 @@
+#Logincontainer{
+
+  max-width: 500px;
+  height: 550px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: auto;
+  background-color: black;
+  transition: all .6s ease-in-out;
+  animation-name: zoom;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  display: none;
+}
+
+@keyframes zoom {
+  from{
+     transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+
+
+#closelogin{
+  text-align: right;
+  color: white;
+  font-size: xx-large;
+}
+
+#loginlogo{
+      font-family: "Pacifico", cursive;
+      font-weight: 300;
+      margin: 20px;
+      color: white;
+  text-align: center;
+}
+#lan1{
+  margin: 0;
+  font-size: 4rem;
+
+}
+#lan2{
+  font-size: 1.5rem;
+  
+}
+
+form{
+  color: white;
+  padding: 10px;
+  font-size: x-large;
+  margin: 20px;
+}
+
+form>input{
+  width: 90%;
+  height: 30px;
+}
+
+form>button{
+  width: 92%;
+  height: 35px;
+  margin-top: 5px;
+  font-size: large;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+@media screen and (max-width:800px) {
+  #Logincontainer{
+    max-width: 300px;
+  height: 450px;
+  }
+
+  #lan1{
+    font-size: 2rem;
+  }
+  #lan2{
+    font-size: 1rem;
+  }
+}
